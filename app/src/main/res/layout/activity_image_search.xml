@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:background="@color/light_gray"
+              tools:context=".ImageSearchActivity">
+
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:padding="@dimen/header_padding"
+                      android:background="@color/blue">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/white"
+                      android:textSize="@dimen/header_font_size"
+                      android:text="@string/image_search"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/search_container"
+                      android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="@dimen/search_bar_height"
+                      android:background="@color/white"
+                      android:focusableInTouchMode="true">
+            <EditText android:id="@+id/search_text"
+                      android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight="1"
+                      android:paddingLeft="@dimen/search_padding"
+                      android:background="@android:color/transparent"
+                      android:drawablePadding="@dimen/search_padding"
+                      android:textColor="@color/holo_light_gray"
+                      android:textSize="@dimen/search_font_size"
+                      android:hint="@string/image_search_hint"
+                      android:maxLength="255"
+                      android:singleLine="true"
+                      android:selectAllOnFocus="true"
+                      android:imeOptions="actionSearch"/>
+            <LinearLayout android:id="@+id/search_button"
+                          android:layout_width="@dimen/search_bar_height"
+                          android:layout_height="match_parent"
+                          android:padding="@dimen/search_button_padding">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/search_large"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:background="@android:drawable/divider_horizontal_bright">
+        </View>
+
+        <LinearLayout android:orientation="vertical"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent">
+            <LinearLayout android:id="@+id/progress_bar"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:gravity="center"
+                          android:visibility="gone">
+                <ProgressBar android:layout_width="48dp"
+                             android:layout_height="48dp"
+                             android:indeterminateTint="@color/blue"
+                             android:indeterminateTintMode="src_in"/>
+            </LinearLayout>
+
+            <!-- Search results list -->
+            <GridView android:id="@+id/images"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:horizontalSpacing="@dimen/image_spacing"
+                      android:verticalSpacing="@dimen/image_spacing"
+                      android:numColumns="2"/>
+
+            <LinearLayout android:id="@+id/image_list_empty"
+                          android:orientation="vertical"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:gravity="center"
+                          android:visibility="gone">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textSize="16sp"
+                          android:text="@string/no_images"/>
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/error"
+                          android:orientation="vertical"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:gravity="center"
+                          android:visibility="gone">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textSize="16sp"
+                          android:text="@string/image_search_failure"/>
+                <Button android:id="@+id/retry_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:text="@string/retry"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

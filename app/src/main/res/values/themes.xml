@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Hide the title bar -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

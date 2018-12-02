@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/light_gray">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:padding="@dimen/header_padding"
+                  android:background="@color/heading_background">
+        <TextView android:id="@+id/title"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/join_match"
+                  android:textSize="@dimen/header_font_size"
+                  android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:paddingTop="@dimen/title_auto_match_padding"
+                  android:paddingLeft="@dimen/title_auto_match_padding"
+                  android:paddingRight="@dimen/title_auto_match_padding">
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/join_match_type"
+                  android:textSize="@dimen/title_auto_match_font_size"
+                  android:textColor="@color/white_card_text"/>
+
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="@dimen/title_auto_match_small_margin">
+            <Spinner android:id="@+id/white_card_type"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:paddingLeft="@dimen/auto_pick_padding"
+                     android:paddingRight="@dimen/auto_pick_padding"
+                     android:entries="@array/white_card_types"
+                     android:textSize="@dimen/title_auto_match_font_size"
+                     android:spinnerMode="dropdown"/>
+        </LinearLayout>
+
+        <TextView android:id="@+id/white_card_type_description"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/title_auto_match_small_margin"
+                  android:textColor="@color/holo_light_gray"
+                  android:textSize="@dimen/description_font_size"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="right">
+        <TextView android:id="@+id/cancel_button"
+                  android:layout_width="wrap_content"
+                  android:layout_height="@dimen/title_auto_match_button_height"
+                  android:paddingLeft="@dimen/title_auto_match_padding"
+                  android:paddingRight="@dimen/title_auto_match_padding"
+                  android:gravity="center"
+                  android:text="Cancel"
+                  android:textSize="@dimen/title_auto_match_font_size"/>
+        <TextView android:id="@+id/ok_button"
+                  android:layout_width="wrap_content"
+                  android:layout_height="@dimen/title_auto_match_button_height"
+                  android:paddingLeft="@dimen/title_auto_match_button_padding"
+                  android:paddingRight="@dimen/title_auto_match_button_padding"
+                  android:gravity="center"
+                  android:text="OK"
+                  android:textSize="@dimen/title_auto_match_font_size"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,286 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:fitsSystemWindows="true"
+              android:background="@android:color/white"
+              android:padding="6dp"
+              tools:context=".TitleActivity">
+    <!-- Top black bar -->
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight=".075"
+                  android:background="@android:color/black">
+        <!-- Left spacer -->
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight=".04"/>
+        <!-- Title bar content -->
+        <LinearLayout android:orientation="vertical"
+                      android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight=".8"
+                      android:gravity="center">
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight=".1"/>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight=".3"
+                          android:gravity="center">
+                <ImageView android:id="@+id/logo"
+                           android:layout_width="wrap_content"
+                           android:layout_height="match_parent"
+                           android:src="@drawable/title_logo"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight=".1"/>
+        </LinearLayout>
+        <!-- Right spacer -->
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight=".04"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight=".3">
+        <!-- Left black bar -->
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight=".04"
+                      android:background="@android:color/black"/>
+        <!-- Center white space -->
+        <LinearLayout android:id="@+id/content"
+                      android:orientation="vertical"
+                      android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight=".8">
+            <!-- BEGIN CONTENT -->
+            <LinearLayout android:orientation="horizontal"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:paddingTop="4dp"
+                          android:gravity="right">
+                <TextView android:id="@+id/welcome_text"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:paddingRight="8dp"
+                          android:textColor="@color/white_card_text"
+                          android:textSize="16sp"/>
+                <TextView android:id="@+id/sign_button"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:paddingRight="8dp"
+                          android:textColor="@color/blue"
+                          android:textSize="16sp"
+                          android:text="@string/sign_in"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+                          android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="1">
+                <LinearLayout android:id="@+id/black_card"
+                              android:orientation="vertical"
+                              android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:layout_weight="1"
+                              android:layout_marginRight="-50dp">
+                    <LinearLayout android:orientation="horizontal"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="0dp"
+                                  android:layout_weight="3">
+                        <!-- Empty -->
+                        <LinearLayout android:layout_width="0dp"
+                                      android:layout_height="match_parent"
+                                      android:layout_weight="1.2"/>
+                        <!-- Black Card -->
+                        <LinearLayout android:orientation="vertical"
+                                      android:layout_width="0dp"
+                                      android:layout_height="match_parent"
+                                      android:layout_weight="17"
+                                      android:layout_marginTop="20dp"
+                                      android:layout_marginBottom="20dp"
+                                      android:layout_gravity="center"
+                                      android:rotation="-15"
+                                      android:background="@drawable/black_card_img"
+                                      android:paddingLeft="26dp"
+                                      android:paddingRight="26dp">
+                            <LinearLayout android:id="@+id/black_card_progress_bar"
+                                          android:layout_width="match_parent"
+                                          android:layout_height="match_parent"
+                                          android:gravity="center"
+                                          android:visibility="gone">
+                                <ProgressBar android:layout_width="32dp"
+                                             android:layout_height="32dp"
+                                             android:indeterminateTint="@color/blue"
+                                             android:indeterminateTintMode="src_in"/>
+                            </LinearLayout>
+                            <TextView android:id="@+id/black_card_text"
+                                      android:textColor="@color/black_card_text"
+                                      android:layout_width="match_parent"
+                                      android:layout_height="match_parent"
+                                      android:layout_marginTop="14dp"
+                                      android:textSize="16sp"/>
+                        </LinearLayout>
+
+                        <!-- Empty -->
+                        <LinearLayout android:layout_width="0dp"
+                                      android:layout_height="match_parent"
+                                      android:layout_weight="1.2"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.5"/>
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/white_card"
+                              android:orientation="vertical"
+                              android:layout_width="0dp"
+                              android:layout_height="match_parent"
+                              android:layout_weight="1"
+                              android:layout_marginLeft="-50dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.5"/>
+
+                    <LinearLayout android:orientation="horizontal"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="0dp"
+                                  android:layout_weight="3">
+                        <!-- Empty -->
+                        <LinearLayout android:layout_width="0dp"
+                                      android:layout_height="match_parent"
+                                      android:layout_weight="1.2"/>
+                        <!-- White Card -->
+                        <LinearLayout android:orientation="vertical"
+                                      android:layout_width="0dp"
+                                      android:layout_height="match_parent"
+                                      android:layout_weight="17"
+                                      android:layout_marginTop="20dp"
+                                      android:layout_marginBottom="20dp"
+                                      android:layout_gravity="center"
+                                      android:rotation="15"
+                                      android:background="@drawable/white_card_full_img"
+                                      android:paddingLeft="26dp"
+                                      android:paddingRight="26dp">
+                            <LinearLayout android:id="@+id/white_card_progress_bar"
+                                          android:layout_width="match_parent"
+                                          android:layout_height="match_parent"
+                                          android:gravity="center"
+                                          android:visibility="gone">
+                                <ProgressBar android:layout_width="32dp"
+                                             android:layout_height="32dp"
+                                             android:indeterminateTint="@color/blue"
+                                             android:indeterminateTintMode="src_in"/>
+                            </LinearLayout>
+                            <TextView android:id="@+id/white_card_text"
+                                      android:textColor="@color/white_card_text"
+                                      android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:layout_marginTop="14dp"
+                                      android:textSize="16sp"/>
+                        </LinearLayout>
+                        <!-- Empty -->
+                        <LinearLayout android:layout_width="0dp"
+                                      android:layout_height="match_parent"
+                                      android:layout_weight="1.2"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- END CONTENT -->
+        </LinearLayout>
+
+        <!-- Right black bar -->
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight=".04"
+                      android:background="@android:color/black"/>
+    </LinearLayout>
+    <!-- Bottom black bar -->
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight=".09"
+                  android:background="@android:color/black">
+        <!-- Left spacer -->
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight=".04"/>
+        <!-- Bottom bar content -->
+        <LinearLayout android:orientation="vertical"
+                      android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight=".8">
+            <!-- Top Spacer -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2"/>
+            <LinearLayout android:orientation="horizontal"
+                          android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="1">
+                <TextView android:id="@+id/new_match_button"
+                          android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="1"
+                          android:layout_marginLeft="8dp"
+                          android:gravity="center"
+                          android:text="@string/new_match"
+                          android:textSize="29sp"
+                          android:textStyle="bold"
+                          android:textColor="@color/disabled_text"/>
+                <TextView android:id="@+id/matches_button"
+                          android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="1"
+                          android:layout_marginRight="8dp"
+                          android:gravity="center"
+                          android:text="@string/matches"
+                          android:textSize="29sp"
+                          android:textStyle="bold"
+                          android:textColor="@color/disabled_text"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal"
+                          android:layout_width="match_parent"
+                          android:layout_height="0dp"
+                          android:layout_weight="1">
+                <TextView android:id="@+id/auto_match_button"
+                          android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="1"
+                          android:layout_marginLeft="8dp"
+                          android:gravity="center"
+                          android:text="@string/join_match"
+                          android:textSize="29sp"
+                          android:textStyle="bold"
+                          android:textColor="@color/disabled_text"/>
+                <TextView android:id="@+id/settings_button"
+                          android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="1"
+                          android:layout_marginRight="8dp"
+                          android:gravity="center"
+                          android:text="@string/settings"
+                          android:textSize="29sp"
+                          android:textStyle="bold"
+                          android:textColor="@android:color/white"/>
+            </LinearLayout>
+            <!-- Bottom Spacer -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4"/>
+        </LinearLayout>
+        <!-- Right spacer -->
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight=".04"/>
+    </LinearLayout>
+</LinearLayout>

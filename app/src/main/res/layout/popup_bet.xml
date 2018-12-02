@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:layout_gravity="center"
+              android:background="@color/white">
+
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="@dimen/bet_popup_width"
+                  android:layout_height="match_parent">
+        <TextView android:id="@+id/bet_minus_button"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:gravity="center"
+                  android:paddingLeft="@dimen/bet_button_padding"
+                  android:paddingRight="@dimen/bet_button_padding"
+                  android:text="-"
+                  android:textSize="@dimen/bet_popup_font_size"
+                  android:textColor="@color/white_card_text"/>
+
+
+            <TextView android:id="@+id/bet_amount"
+                      android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight="2"
+                      android:gravity="center"
+                      android:text="0"
+                      android:textSize="@dimen/bet_popup_font_size"
+                      android:textColor="@color/white_card_text"/>
+
+        <TextView android:id="@+id/bet_plus_button"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:gravity="center"
+                  android:paddingLeft="@dimen/bet_button_padding"
+                  android:paddingRight="@dimen/bet_button_padding"
+                  android:text="+"
+                  android:textSize="@dimen/bet_popup_font_size"
+                  android:textColor="@color/white_card_text"/>
+    </LinearLayout>
+</LinearLayout>

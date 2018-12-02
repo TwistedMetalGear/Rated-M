@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/root"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"/>
+
+    <FrameLayout android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="3.14">
+
+        <!-- Original padding: 14dp top, 24dp sides -->
+        <LinearLayout android:orientation="vertical"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:background="@drawable/white_card_img"
+                      android:layout_marginLeft="12dp"
+                      android:layout_marginRight="12dp"
+                      android:layout_marginTop="22dp"
+                      android:paddingTop="14dp"
+                      android:paddingLeft="26dp"
+                      android:paddingRight="26dp">
+
+            <!--
+            <TextView android:id="@+id/white_card_text"
+                      android:textSize="@dimen/card_font_size"
+                      android:textColor="@color/white_card_text"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"/>
+            -->
+
+            <TextView android:id="@+id/white_card_text"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="top"
+                      android:textSize="18sp"
+                      android:textColor="@color/white_card_text"
+                      android:background="@android:color/transparent"/>
+
+            <net.silentbyte.ratedm.CardEditText android:id="@+id/blank_card_text"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="18sp"
+                                                android:textColor="@color/white_card_text"
+                                                android:gravity="top"
+                                                android:background="@android:color/transparent"
+                                                android:maxLength="255"
+                                                android:maxLines="8"
+                                                android:inputType="textAutoCorrect|textCapSentences|textMultiLine"
+                                                android:imeOptions="actionDone"
+                                                android:visibility="gone"/>
+
+            <FrameLayout android:id="@+id/image_panel"
+                          android:orientation="vertical"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:visibility="gone">
+                <LinearLayout android:id="@+id/progress_bar"
+                              android:orientation="vertical"
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:visibility="gone">
+                    <LinearLayout android:orientation="vertical"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="0dp"
+                                  android:layout_weight=".75"
+                                  android:gravity="center">
+                        <ProgressBar android:layout_width="@dimen/image_load_progress_bar_size"
+                                     android:layout_height="@dimen/image_load_progress_bar_size"
+                                     android:indeterminateTint="@color/blue"
+                                     android:indeterminateTintMode="src_in"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="0dp"
+                                  android:layout_weight=".25"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/image_container"
+                              android:orientation="vertical"
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent">
+                    <ImageView android:id="@+id/image"
+                               android:layout_width="match_parent"
+                               android:layout_height="0dp"
+                               android:layout_weight=".75"/>
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="0dp"
+                                  android:layout_weight=".25">
+                        <TextView android:id="@+id/image_submitted_by"
+                                  android:textSize="14sp"
+                                  android:textColor="@color/white_card_text"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginTop="4dp"
+                                  android:gravity="right"
+                                  android:visibility="gone"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/error"
+                              android:orientation="vertical"
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:visibility="gone">
+                    <LinearLayout android:orientation="vertical"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="0dp"
+                                  android:layout_weight=".75"
+                                  android:gravity="center">
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:textSize="18sp"
+                                  android:text="@string/reload_image"/>
+                        <ImageView android:layout_width="@dimen/image_reload_button_size"
+                                   android:layout_height="@dimen/image_reload_button_size"
+                                   android:src="@drawable/refresh"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="0dp"
+                                  android:layout_weight=".25"/>
+                </LinearLayout>
+            </FrameLayout>
+
+            <TextView android:id="@+id/submitted_by"
+                      android:textSize="14sp"
+                      android:textColor="@color/white_card_text"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="8dp"
+                      android:gravity="right"
+                      android:visibility="gone"/>
+
+            <!--
+                    <ImageView android:id="@+id/white_card_img"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:src="@drawable/white_card_img"/>
+              -->
+
+        </LinearLayout>
+
+        <ImageView android:id="@+id/card_icon"
+                   android:layout_width="48dp"
+                   android:layout_height="48dp"
+                   android:layout_gravity="top|left"
+                   android:visibility="gone"/>
+
+        <ImageView android:id="@+id/reaction"
+                   android:layout_width="40dp"
+                   android:layout_height="40dp"
+                   android:layout_marginRight="22dp"
+                   android:layout_gravity="top|right"
+                   android:visibility="gone"/>
+    </FrameLayout>
+
+    <LinearLayout android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"/>
+</LinearLayout>

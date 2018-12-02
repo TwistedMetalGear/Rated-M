@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+    <PreferenceCategory android:title="@string/card_updates">
+        <CheckBoxPreference android:key="auto_update"
+                            android:title="@string/auto_update"
+                            android:summary="@string/auto_update_summary"
+                            android:defaultValue="true"/>
+    </PreferenceCategory>
+    -->
+    <PreferenceCategory android:title="@string/chat">
+        <CheckBoxPreference android:key="dismiss_keyboard"
+                            android:title="@string/dismiss_keyboard"
+                            android:defaultValue="true"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/launch">
+        <CheckBoxPreference android:key="show_matches"
+                            android:title="@string/show_matches"
+                            android:defaultValue="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/notifications">
+        <CheckBoxPreference android:key="notifications_enabled"
+                            android:title="@string/notifications_enabled"
+                            android:summary="@string/notifications_enabled_summary"
+                            android:defaultValue="true"/>
+        <CheckBoxPreference android:key="notification_sound"
+                            android:title="@string/notification_sound"
+                            android:defaultValue="true"/>
+        <CheckBoxPreference android:key="notification_vibration"
+                            android:title="@string/notification_vibration"
+                            android:defaultValue="true"/>
+    </PreferenceCategory>
+    <!--
+    <PreferenceCategory android:title="@string/player_list">
+        <EditTextPreference android:key="player_list_num_rows"
+                            android:title="@string/num_rows"
+                            android:summary="@string/num_rows_summary"
+                            android:inputType="number"
+                            android:defaultValue="8"/>
+    </PreferenceCategory>
+    -->
+    <PreferenceCategory android:title="@string/tts">
+        <CheckBoxPreference android:key="tts_enabled"
+                            android:title="@string/read_card_text"
+                            android:summary="@string/read_card_text_summary"
+                            android:defaultValue="false"/>
+        <CheckBoxPreference android:key="tts_read_white_only"
+                            android:title="@string/read_white_only"
+                            android:summary="@string/read_white_only_summary"
+                            android:defaultValue="false"/>
+        <CheckBoxPreference android:key="tts_read_once"
+                            android:title="@string/read_once"
+                            android:summary="@string/read_once_summary"
+                            android:defaultValue="false"/>
+    </PreferenceCategory>
+</PreferenceScreen>

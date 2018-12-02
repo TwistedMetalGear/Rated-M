@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/light_gray">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:padding="@dimen/header_padding"
+                  android:background="@color/heading_background">
+        <TextView android:id="@+id/title"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="@dimen/about_header_font_size"
+                  android:textColor="@color/white"
+                  android:text="Thanks!"/>
+    </LinearLayout>
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+        <LinearLayout android:orientation="vertical"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:padding="@dimen/about_padding">
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="@dimen/about_text_margin"
+                      android:text="@string/rate_description_1"
+                      android:textSize="@dimen/about_font_size"
+                      android:textColor="@color/white_card_text"/>
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="@dimen/about_text_margin"
+                      android:text="@string/rate_description_2"
+                      android:textSize="@dimen/about_font_size"
+                      android:textColor="@color/white_card_text"
+                      android:linksClickable="true"/>
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="@dimen/about_text_margin"
+                      android:text="@string/rate_description_3"
+                      android:textSize="@dimen/about_font_size"
+                      android:textColor="@color/white_card_text"
+                      android:linksClickable="true"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="right">
+        <TextView android:id="@+id/no_button"
+                  android:layout_width="wrap_content"
+                  android:layout_height="@dimen/about_button_height"
+                  android:paddingLeft="@dimen/rate_button_padding"
+                  android:paddingRight="@dimen/rate_button_padding"
+                  android:gravity="center"
+                  android:text="@string/no_thanks"
+                  android:textSize="@dimen/about_button_font_size"/>
+        <TextView android:id="@+id/later_button"
+                  android:layout_width="wrap_content"
+                  android:layout_height="@dimen/about_button_height"
+                  android:paddingLeft="@dimen/rate_button_padding"
+                  android:paddingRight="@dimen/rate_button_padding"
+                  android:gravity="center"
+                  android:text="@string/later"
+                  android:textSize="@dimen/about_button_font_size"/>
+        <TextView android:id="@+id/rate_button"
+                  android:layout_width="wrap_content"
+                  android:layout_height="@dimen/about_button_height"
+                  android:paddingLeft="@dimen/rate_button_padding"
+                  android:paddingRight="@dimen/rate_button_padding"
+                  android:gravity="center"
+                  android:text="@string/rate"
+                  android:textSize="@dimen/about_button_font_size"/>
+    </LinearLayout>
+</LinearLayout>

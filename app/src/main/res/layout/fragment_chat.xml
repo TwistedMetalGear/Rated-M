@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                 android:layout_weight="1"
+                 android:background="@color/white">
+        <ListView android:id="@+id/chat_message_list"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:padding="@dimen/chat_list_view_padding"
+                  android:clipToPadding="false"
+                  android:divider="@android:color/transparent"
+                  android:dividerHeight="@dimen/chat_divider_height"
+                  android:listSelector="@android:color/transparent"
+                  /> <!-- android:transcriptMode="alwaysScroll" -->
+        <ProgressBar android:id="@+id/chat_progress_bar"
+                     android:layout_width="@dimen/chat_progress_bar_size"
+                     android:layout_height="@dimen/chat_progress_bar_size"
+                     android:layout_gravity="center"
+                     android:indeterminateTint="@color/blue"
+                     android:indeterminateTintMode="src_in"
+                     android:visibility="gone"/>
+    </FrameLayout>
+
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="@dimen/message_box_height"
+                  android:paddingTop="1px"
+                  android:background="@drawable/chat_message_border">
+        <EditText android:id="@+id/chat_message"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:paddingLeft="@dimen/chat_padding"
+                  android:textSize="@dimen/chat_font_size"
+                  android:textColor="@color/white_card_text"
+                  android:background="@color/white"
+                  android:maxLength="255"
+                  android:inputType="textAutoCorrect|textCapSentences"
+                  android:imeOptions="actionSend"/>
+        <LinearLayout android:orientation="vertical"
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:gravity="center">
+            <LinearLayout android:id="@+id/send_message_button"
+                          android:orientation="horizontal"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:paddingLeft="@dimen/send_button_padding"
+                          android:paddingRight="@dimen/send_button_padding"
+                          android:gravity="center">
+                <ImageView android:layout_width="@dimen/send_button_size"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/send"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/send_progress_bar"
+                          android:orientation="horizontal"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:paddingLeft="10dp"
+                          android:paddingRight="10dp"
+                          android:gravity="center"
+                          android:visibility="gone">
+                <ProgressBar android:layout_width="@dimen/send_progress_bar_size"
+                             android:layout_height="@dimen/send_progress_bar_size"
+                             android:indeterminateTint="@color/blue"
+                             android:indeterminateTintMode="src_in"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

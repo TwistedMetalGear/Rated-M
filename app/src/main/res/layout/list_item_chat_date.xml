@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+    <TextView android:id="@+id/chat_month_day"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:textColor="@color/white_card_text"
+              android:textSize="@dimen/chat_font_size"
+              android:gravity="center"/>
+</LinearLayout>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Rated M</string>
+    <string name="app_id">APP_ID</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_item_invite">Invite Players</string>
+    <string name="menu_item_kick">Kick Players</string>
+    <string name="menu_item_auto_pick_skip">Auto Pick/Skip</string>
+    <string name="menu_item_match_settings">Match Settings</string>
+    <string name="menu_item_general_settings">General Settings</string>
+    <string name="menu_item_leave_match">Leave Match</string>
+    <string name="menu_item_about">About</string>
+    <string name="facebook_app_id">FACEBOOK_APP_ID</string>
+
+    <!-- Title Screen -->
+    <string name="new_match">New Match</string>
+    <string name="join_match">Join Match</string>
+    <string name="matches">Matches</string>
+    <string name="settings">Settings</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="default_black_card_text">A card game for ____________.</string>
+    <string name="default_white_card_text">Terrible people.</string>
+    <string name="card_retrieval_failure">Unable to retrieve cards.</string>
+    <string name="thanks">Thank you for downloading Rated M! I sincerely hope you enjoy playing it as much as I enjoyed developing it.</string>
+    <string name="credits_1">Rated M is based on <a href="https://cardsagainsthumanity.com">Cards Against Humanity</a>. If you enjoy this game, please consider supporting them. Rated M and the developer, SilentByte, are in no way affiliated with Cards Against Humanity.</string>
+    <string name="credits_2">All Cards Against Humanity content within this game is licensed under a <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">Creative Commons License</a>.</string>
+    <string name="credits_3">In order to comply with the Creative Commons License, all cards are stored on a separate web server. This ensures that no Cards Against Humanity content is hosted on the Google Play Store.</string>
+    <string name="credits_4">Emoji provided free by <a href="http://emojione.com">EmojiOne</a>.</string>
+    <string name="contact_1">The developer would love to hear from you! Please send any questions, comments, or suggestions to <a href="mailto:dev@silentbyte.net">dev@silentbyte.net</a>.</string>
+
+    <!-- Sign In Screen -->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="register">Register</string>
+    <string name="create_account">Create Account</string>
+    <string name="sign_in_with_facebook">Sign in with Facebook</string>
+    <string name="never_post_to_fb">Rated M will never post anything to Facebook.</string>
+    <string name="name">Name:</string>
+    <string name="name_description">This is how you will be displayed in game. Players can search for this name to invite you to a match.</string>
+    <string name="hide_email_prefix">Hide Email Prefix</string>
+    <string name="hide_email_prefix_description">Email prefix (before "@site.com") will not be shown on the invite players screen.</string>
+    <string name="hide_facebook_name">Hide Facebook Name</string>
+    <string name="hide_facebook_name_description">Facebook name will not be visible to other players.</string>
+    <string name="hide_facebook_picture">Hide Facebook Profile Picture</string>
+    <string name="hide_facebook_picture_description">Facebook profile picture will not be visible to other players.</string>
+    <string name="friends_only">I only play with friends</string>
+    <string name="friends_only_description">Notifies strangers that you are unlikely to accept their match invitations.</string>
+
+    <!-- New Match Screen -->
+    <string name="match_settings">Match Settings</string>
+    <string name="match_name">Match Name:</string>
+    <string name="black_cards">Black Cards:</string>
+    <string name="white_cards">White Cards:</string>
+    <string name="black_card_standard_description">Pre-written black cards will be drawn at the beginning of each round.</string>
+    <string name="black_card_custom_description">The judge will write a custom black card at the beginning of each round. Alternatively, they can draw a pre-written black card.</string>
+    <string name="white_card_standard_description">Players will respond to black cards with pre-written white cards and also have a small chance of drawing custom text and picture cards.</string>
+    <string name="white_card_custom_description">Players will respond to black cards with their choice of custom text or picture cards.</string>
+    <string name="inactive_players">Inactive Players:</string>
+    <string name="auto_pick_description">Random card submissions will be made for any players who fail to submit a card before the specified timeout expires.</string>
+    <string name="skip_description">Any player who fails to submit a card before the specified timeout expires will be skipped. A skip will only be performed if at least two cards have been submitted.</string>
+    <string name="wait_description">No timeouts. All players must submit cards before the match continues. Only select this mode if you\'re sure that all players will be responsive.</string>
+    <string name="auto_pick_after">Auto Pick After:</string>
+    <string name="skip_after">Skip After:</string>
+    <string name="auto_pick_after_description">The time that a player has to submit a card before a random auto pick is made. Resets at the beginning of each round.</string>
+    <string name="skip_after_description">The time that a player has to submit a card before they are skipped. Resets at the beginning of each round.</string>
+    <string name="auto_pick_exclude_hours">Don\'t auto pick during these hours:</string>
+    <string name="skip_exclude_hours">Don\'t skip during these hours:</string>
+    <string name="exclude_hours_description">It is recommended to set this to overnight hours when players are sleeping.</string>
+    <string name="next">Next</string>
+    <string name="no_players">No matching players found.</string>
+    <string name="retrieve_friends_failure">Unable to retrieve Facebook friends.</string>
+    <string name="retrieve_attendees_failure">Unable to retrieve players.</string>
+    <string name="find_players_failure">Unable to find players.</string>
+    <string name="open_for_invites">Open for invites</string>
+    <string name="closed_for_invites">Plays with friends only</string>
+    <string name="wins">Wins:</string>
+    <string name="losses">Losses:</string>
+    <string name="retry">Retry</string>
+    <string name="play">Play</string>
+    <string name="done">Done</string>
+    <string name="invite">Invite</string>
+    <string name="kick">Kick</string>
+
+    <string-array name="black_card_types">
+        <item>Standard</item>
+        <item>Custom Text</item>
+    </string-array>
+
+    <string-array name="white_card_types">
+        <item>Standard</item>
+        <item>Custom</item>
+    </string-array>
+
+    <string-array name="inactive_mode">
+        <item>Auto Pick</item>
+        <item>Skip</item>
+    </string-array>
+
+    <string-array name="auto_pick_skip_timeout">
+        <item>1 minute</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>20 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>2 hours</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>8 hours</item>
+        <item>10 hours</item>
+        <item>12 hours</item>
+        <item>1 day</item>
+    </string-array>
+
+    <string-array name="exclude_hours">
+        <item>12:00 am</item>
+        <item>1:00 am</item>
+        <item>2:00 am</item>
+        <item>3:00 am</item>
+        <item>4:00 am</item>
+        <item>5:00 am</item>
+        <item>6:00 am</item>
+        <item>7:00 am</item>
+        <item>8:00 am</item>
+        <item>9:00 am</item>
+        <item>10:00 am</item>
+        <item>11:00 am</item>
+        <item>12:00 pm</item>
+        <item>1:00 pm</item>
+        <item>2:00 pm</item>
+        <item>3:00 pm</item>
+        <item>4:00 pm</item>
+        <item>5:00 pm</item>
+        <item>6:00 pm</item>
+        <item>7:00 pm</item>
+        <item>8:00 pm</item>
+        <item>9:00 pm</item>
+        <item>10:00 pm</item>
+        <item>11:00 pm</item>
+    </string-array>
+
+    <!-- Matches Screen -->
+    <string name="no_matches">You have no matches.</string>
+    <string name="match_retrieval_failure">Unable to retrieve matches.</string>
+
+    <!-- Game Screen -->
+    <string name="already_submitted">Already submitted.</string>
+    <string name="already_tossed">Card has already been tossed.</string>
+    <string name="submit_failed">Submit failed. Please try again.</string>
+    <string name="toss_failed">Toss failed. Please try again.</string>
+    <string name="reload_image">Reload Image</string>
+    <string name="black_card_hint">Enter text here. Use single underscores for fill in the blanks. Tap submit without writing anything to draw a pre-written card.</string>
+
+    <!-- Image Search Screen -->
+    <string name="image_search">Image Search</string>
+    <string name="image_search_hint">Enter search term or image URL</string>
+    <string name="no_images">No matching images found.</string>
+    <string name="image_search_failure">Unable to search.</string>
+
+    <!-- Buttons -->
+    <string name="submit">Submit</string>
+    <string name="submit1">Submit-1</string>
+    <string name="submit2">Submit-2</string>
+    <string name="skip">Skip</string>
+    <string name="toss">Toss</string>
+    <string name="bet">Bet</string>
+    <string name="chat">Chat</string>
+    <string name="rematch">Rematch</string>
+    <string name="resume">Resume</string>
+    <string name="send">Send</string>
+
+    <!-- Preferences -->
+    <string name="card_updates">Card Updates</string>
+    <string name="auto_update">Auto-update</string>
+    <string name="auto_update_summary">Check for new cards on app startup</string>
+    <string name="launch">Launch</string>
+    <string name="show_matches">Show matches on launch</string>
+    <string name="dismiss_keyboard">Dismiss keyboard on send</string>
+    <string name="notifications">Notifications</string>
+    <string name="notifications_enabled">Enable notifications</string>
+    <string name="notifications_enabled_summary">Send a notification when it\'s time to submit a card.</string>
+    <string name="notification_sound">Notification sound</string>
+    <string name="notification_vibration">Notification vibration</string>
+    <string name="player_list">Player List</string>
+    <string name="num_rows">Number of Rows</string>
+    <string name="num_rows_summary">Number of rows to display before scrolling</string>
+    <string name="tts">Text to Speech</string>
+    <string name="read_card_text">Enable text to speech</string>
+    <string name="read_card_text_summary">Use text to speech to read cards</string>
+    <string name="read_white_only">Read white cards only</string>
+    <string name="read_white_only_summary">Black cards will not be read</string>
+    <string name="read_once">Read cards once only</string>
+    <string name="read_once_summary">Avoid reading the same card twice</string>
+
+    <!-- Dialogs -->
+    <string name="do_not_show_again">Do not show again.</string>
+    <string name="try_again">Please try again.</string>
+    <string name="try_again_later">Please try again later.</string>
+    <string name="unable_to_join_match">Unable to Join Match</string>
+    <string name="unable_to_create_match">Unable to Create Match</string>
+    <string name="unable_to_update_match_settings">Unable to Update Match Settings</string>
+    <string name="unable_to_invite">Unable to Invite</string>
+    <string name="unable_to_kick">Unable to Kick</string>
+    <string name="unable_to_load_match">Unable to Load Match</string>
+    <string name="unable_to_sign_in">Unable to Sign In</string>
+    <string name="unable_to_create_account">Unable to Create Account</string>
+    <string name="unable_to_submit">Unable to Submit</string>
+    <string name="account_created_title">Account Created</string>
+    <string name="account_created_description">Your account has been created. Please sign in.</string>
+    <string name="invalid_email_title">Invalid Email</string>
+    <string name="invalid_email_description">Please enter a valid email address.</string>
+    <string name="invalid_password_title">Invalid Password</string>
+    <string name="invalid_password_description">Please enter a password with at least %1$s characters.</string>
+    <string name="password_mismatch_title">Password Mismatch</string>
+    <string name="password_mismatch_description">The passwords you entered do not match.</string>
+    <string name="password_reset_title">Email Sent</string>
+    <string name="password_reset_description">Please check your email for instructions on how to reset your password.</string>
+    <string name="unable_to_send_email">Unable to Send Email</string>
+    <string name="email_in_use">Email address already in use.</string>
+    <string name="invalid_credentials">Invalid email and/or password.</string>
+    <string name="invalid_name_title">Invalid Name</string>
+    <string name="invalid_name_description">Please enter a name with %1$s to %2$s characters.</string>
+    <string name="sign_in_again">Please sign in again.</string>
+    <string name="error_occurred">An error has occurred:</string>
+    <string name="signing_in">Signing in...</string>
+    <string name="creating_account">Creating account...</string>
+    <string name="sending_email">Sending email...</string>
+    <string name="updating_user">Updating user...</string>
+    <string name="unable_to_update_user">Unable to Update User</string>
+    <string name="invalid_match_name">Invalid Match Name</string>
+    <string name="invalid_match_name_description">Please enter a match name with %1$s to %2$s characters.</string>
+    <string name="match_creation_limit_reached">Match creation limit reached. Please finish or leave one or more of your active matches.</string>
+    <string name="match_version_older">The person who invited you is running an older version of Rated M.</string>
+    <string name="match_version_newer">This version of Rated M is out of date. Please update to the latest version to join the match.</string>
+    <string name="too_many_invitees">There are too many invitees.</string>
+    <string name="unable_to_rematch">Unable to rematch. Please try again.</string>
+    <string name="auto_pick_skip_title">Force Auto Pick/Skip</string>
+    <string name="auto_pick_skip_description">This will force an auto pick/skip on any players who haven\'t yet submitted. Are you sure you want to continue?</string>
+    <string name="rematch_title">Rematch</string>
+    <string name="rematch_description">A new match will be created with the same game type and players. You will become the match owner. Are you sure you want to continue?</string>
+    <string name="leave_match_title">Leave Match</string>
+    <string name="leave_match_description">Are you sure you want to leave the match?</string>
+    <string name="leave_match_warning">Warning: Leaving may cancel the match due to insufficient player count.</string>
+    <string name="leave_match_creator_warning">Warning: You are the match creator. Leaving will cancel the match.</string>
+    <string name="unable_to_force_auto_pick_skip">Unable to force auto pick/skip.</string>
+    <string name="unable_to_leave_match">Unable to leave match. Please try again.</string>
+    <string name="invite_success_title">Invite Successful</string>
+    <string name="invite_success_description">Players will be invited at the end of the current round.</string>
+    <string name="kick_success_title">Kick Successful</string>
+    <string name="kick_success_description">Players will be kicked at the end of the current round.</string>
+    <string name="expired_title">Expired</string>
+    <string name="expired_description">Match has expired.</string>
+    <string name="removed_title">Removed</string>
+    <string name="removed_description">You have been removed from the match.</string>
+    <string name="connection_lost">Connection to server lost. Please try reloading the match.</string>
+    <string name="max_two_blanks">Please use a maximum of two blanks.</string>
+    <string name="join_match_type">What type of match would you like to join?</string>
+    <string name="invite_warning">One or more of your invitees will only accept invites from friends. Do you know all of your invitees?</string>
+    <string name="rate_title">Thanks!</string>
+    <string name="rate_description_1">Thank you for playing Rated M! I sincerely hope you enjoy playing it as much as I enjoyed developing it. It would mean a lot if you could write a quick review on the Google Play Store. The developer would love to hear what you think!</string>
+    <string name="rate_description_2">Reviews help both the developer and the Android community in general. All feedback will be taken into consideration when making future improvements to the game.</string>
+    <string name="rate_description_3">Tap Rate below to go to the Google Play Store and leave a review. If you don\'t feel like writing, even leaving some stars will help. Thanks again, and enjoy the game!</string>
+    <string name="rate">Rate</string>
+    <string name="later">Later</string>
+    <string name="no_thanks">No Thanks</string>
+
+    <!-- Notifications -->
+    <string name="multiple_notifications">Multiple notifications</string>
+
+</resources>

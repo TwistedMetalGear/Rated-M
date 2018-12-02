@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/table_row"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white">
+    <ImageView android:id="@+id/picture"
+               android:layout_width="@dimen/list_item_image_size"
+               android:layout_height="@dimen/list_item_image_size"
+               android:layout_marginTop="@dimen/list_item_image_margin"
+               android:layout_marginBottom="@dimen/list_item_image_margin"
+               android:layout_marginLeft="@dimen/list_item_image_margin"
+               android:focusable="false"/>
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:gravity="center_vertical">
+        <TextView android:id="@+id/name_text"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/list_item_text_margin"
+                  android:layout_marginRight="@dimen/list_item_text_margin"
+                  android:focusable="false"
+                  android:textSize="@dimen/list_item_font_size"/>
+        <TextView android:id="@+id/status_text"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/list_item_text_margin"
+                  android:layout_marginRight="@dimen/list_item_text_margin"
+                  android:focusable="false"
+                  android:textSize="@dimen/match_status_font_size"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/chat_bubble"
+                  android:orientation="horizontal"
+                  android:layout_width="@dimen/list_item_image_size"
+                  android:layout_height="@dimen/list_item_image_size"
+                  android:layout_marginTop="@dimen/list_item_image_margin"
+                  android:layout_marginBottom="@dimen/list_item_image_margin"
+                  android:gravity="center"
+                  android:visibility="gone">
+        <ImageView android:layout_width="@dimen/match_chat_bubble_size"
+                   android:layout_height="@dimen/match_chat_bubble_size"
+                   android:focusable="false"
+                   android:src="@drawable/chat_bubble"/>
+    </LinearLayout>
+    <ProgressBar android:id="@+id/progress_bar"
+                 android:layout_width="@dimen/list_item_progress_bar_size"
+                 android:layout_height="@dimen/list_item_progress_bar_size"
+                 android:layout_marginRight="@dimen/match_progress_bar_margin"
+                 android:layout_gravity="right|center_vertical"
+                 android:indeterminateTint="@color/blue"
+                 android:indeterminateTintMode="src_in"
+                 android:visibility="gone"/>
+</LinearLayout>

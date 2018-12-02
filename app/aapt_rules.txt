@@ -1,0 +1,6 @@
+-keepattributes EnclosingMethod
+
+# TODO: Remove the below when app is stable. This will retain line numbers in stack traces.
+-keepattributes SourceFile,LineNumberTable
+# rename the source files to something meaningless, but it must be retained
+-renamesourcefileattribute ''

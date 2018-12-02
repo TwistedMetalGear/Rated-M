@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Table header -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/table_row"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/player_list_row_height"
+              android:orientation="horizontal">
+
+    <!-- Player -->
+    <FrameLayout android:id="@+id/player_name_cell"
+                 android:orientation="horizontal"
+                 android:layout_height="match_parent"
+                 android:layout_width="0dp"
+                 android:layout_weight="1">
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent">
+            <TextView android:id="@+id/player_name"
+                      android:textSize="@dimen/player_list_font_size"
+                      android:textColor="@color/table_row_text"
+                      android:gravity="left|center_vertical"
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:layout_marginLeft="@dimen/player_list_text_margin"
+                      android:singleLine="true"
+                      android:ellipsize="none"/>
+            <net.silentbyte.ratedm.EllipsisView android:id="@+id/player_ellipsis"
+                                                android:textSize="@dimen/player_list_font_size"
+                                                android:textColor="@color/table_row_text"
+                                                android:gravity="left|center_vertical"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:layout_gravity="right|center_vertical"
+                      android:gravity="center_vertical">
+            <TextView android:id="@+id/player_judge_indicator"
+                      android:textSize="@dimen/player_indicator_font_size"
+                      android:textColor="@color/red"
+                      android:text="J"
+                      android:layout_width="wrap_content"
+                      android:layout_height="@dimen/player_indicator_height"
+                      android:layout_marginRight="@dimen/player_indicator_margin_right"
+                      android:singleLine="true"
+                      android:ellipsize="none"/>
+            <ImageView android:id="@+id/player_winner_indicator"
+                       android:layout_width="@dimen/player_indicator_size"
+                       android:layout_height="@dimen/player_indicator_size"
+                       android:layout_marginRight="@dimen/player_indicator_margin_right"
+                       android:src="@drawable/crown"/>
+            <ImageView android:id="@+id/player_ready_indicator"
+                       android:layout_width="@dimen/player_indicator_size"
+                       android:layout_height="@dimen/player_indicator_size"
+                       android:layout_marginRight="@dimen/player_indicator_margin_right"
+                       android:src="@drawable/blue_check"/>
+            <TextView android:id="@+id/player_auto_pick_indicator"
+                      android:textSize="@dimen/player_indicator_font_size"
+                      android:textColor="@color/blue"
+                      android:text="A"
+                      android:layout_width="wrap_content"
+                      android:layout_height="@dimen/player_indicator_height"
+                      android:layout_marginRight="@dimen/player_indicator_margin_right"
+                      android:singleLine="true"
+                      android:ellipsize="none"/>
+            <TextView android:id="@+id/player_skip_indicator"
+                      android:textSize="@dimen/player_indicator_font_size"
+                      android:textColor="@color/blue"
+                      android:text="X"
+                      android:layout_width="wrap_content"
+                      android:layout_height="@dimen/player_indicator_height"
+                      android:layout_marginRight="@dimen/player_indicator_margin_right"
+                      android:singleLine="true"
+                      android:ellipsize="none"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- Score -->
+    <LinearLayout android:id="@+id/player_score_cell"
+                  android:orientation="horizontal"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight=".4"
+                  android:gravity="center_vertical">
+        <TextView android:id="@+id/player_score"
+                  android:textSize="@dimen/player_list_font_size"
+                  android:textColor="@color/table_row_text"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/player_list_text_margin"
+                  android:singleLine="true"
+                  android:ellipsize="none"/>
+        <TextView android:id="@+id/player_score_change"
+                  android:textSize="@dimen/score_change_font_size"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/score_change_margin"
+                  android:singleLine="true"
+                  android:ellipsize="none"/>
+    </LinearLayout>
+
+    <!-- Win % -->
+    <LinearLayout android:id="@+id/player_win_percentage_cell"
+                  android:orientation="horizontal"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight=".28"
+                  android:gravity="center_vertical">
+        <TextView android:id="@+id/player_win_percentage"
+                  android:textSize="@dimen/player_list_font_size"
+                  android:textColor="@color/table_row_text"
+                  android:gravity="left|center_vertical"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/player_list_text_margin"
+                  android:singleLine="true"
+                  android:ellipsize="none"/>
+    </LinearLayout>
+
+    <!-- Bet -->
+    <LinearLayout android:id="@+id/player_bet_cell"
+                  android:orientation="horizontal"
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight=".22"
+                  android:gravity="center_vertical">
+        <TextView android:id="@+id/player_bet"
+                  android:textSize="@dimen/player_list_font_size"
+                  android:textColor="@color/table_row_text"
+                  android:gravity="left|center_vertical"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="@dimen/player_list_text_margin"
+                  android:singleLine="true"
+                  android:ellipsize="none"/>
+    </LinearLayout>
+
+</LinearLayout>

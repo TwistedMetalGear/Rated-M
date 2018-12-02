@@ -1,0 +1,146 @@
+<resources>
+    <!-- Title Screen -->
+    <dimen name="title_padding">4dp</dimen>
+    <dimen name="title_welcome_text_padding_top">2dp</dimen>
+    <dimen name="title_welcome_text_padding_right">6dp</dimen>
+    <dimen name="title_card_container_margin">-48dp</dimen>
+    <dimen name="title_card_margin">18dp</dimen>
+    <dimen name="title_button_margin">6dp</dimen>
+    <dimen name="title_auto_match_padding">8dp</dimen>
+    <dimen name="title_auto_match_small_margin">6dp</dimen>
+    <dimen name="title_auto_match_large_margin">22dp</dimen>
+    <dimen name="title_auto_match_button_height">42dp</dimen>
+    <dimen name="title_auto_match_button_padding">28dp</dimen>
+
+    <dimen name="title_welcome_text_font_size">12sp</dimen>
+    <dimen name="title_card_font_size">12sp</dimen>
+    <dimen name="title_button_font_size">22sp</dimen>
+    <dimen name="title_auto_match_font_size">14sp</dimen>
+
+    <!-- Sign In Screen -->
+    <dimen name="sign_in_padding">14dp</dimen>
+    <dimen name="sign_in_small_margin">6dp</dimen>
+    <dimen name="sign_in_large_margin">22dp</dimen>
+    <dimen name="sign_in_button_height">40dp</dimen>
+    <dimen name="sign_in_button_font_size">16sp</dimen>
+    <dimen name="sign_in_forgot_pw_button_font_size">14sp</dimen>
+    <dimen name="sign_in_fb_button_padding_left">14dp</dimen>
+    <dimen name="sign_in_fb_button_padding_right">28dp</dimen>
+    <dimen name="sign_in_logo_size">108dp</dimen>
+    <dimen name="sign_in_font_size">16sp</dimen>
+
+    <!-- New Match Screen -->
+    <dimen name="new_match_padding">14dp</dimen>
+    <dimen name="new_match_small_margin">6dp</dimen>
+    <dimen name="new_match_large_margin">22dp</dimen>
+    <dimen name="new_match_font_size">16sp</dimen>
+    <dimen name="new_match_font_size_small">10sp</dimen>
+    <dimen name="new_match_button_height">42dp</dimen>
+    <dimen name="new_match_button_font_size">14sp</dimen>
+    <dimen name="auto_pick_padding">10dp</dimen>
+    <dimen name="search_bar_height">40dp</dimen>
+    <dimen name="search_padding">6dp</dimen>
+    <dimen name="search_font_size">14sp</dimen>
+    <dimen name="search_icon_size">20dp</dimen>
+    <dimen name="trash_button_padding">10dp</dimen>
+    <dimen name="trash_size">32dp</dimen>
+    <dimen name="list_item_checkbox_margin">4dp</dimen>
+    <dimen name="friend_row_padding">1dp</dimen>
+    <dimen name="error_view_padding">2dp</dimen>
+
+    <!-- Matches Screen -->
+    <dimen name="match_chat_bubble_size">28dp</dimen>
+    <dimen name="match_progress_bar_margin">4dp</dimen>
+    <dimen name="list_item_progress_bar_size">28dp</dimen>
+    <dimen name="match_status_font_size">10sp</dimen>
+
+    <!-- Game Screen -->
+    <dimen name="screen_margin_top">6dp</dimen>
+    <dimen name="card_padding_top">10dp</dimen>
+    <dimen name="card_padding_left">22dp</dimen>
+    <dimen name="card_padding_right">22dp</dimen>
+    <dimen name="card_margin_left">8dp</dimen>
+    <dimen name="card_margin_right">8dp</dimen>
+    <dimen name="card_margin_top">18dp</dimen>
+    <dimen name="card_icon_size">40dp</dimen>
+    <dimen name="reaction_size">34dp</dimen>
+    <dimen name="reaction_margin">18dp</dimen>
+    <dimen name="reaction_padding">4dp</dimen>
+    <item name="card_view_pager_weight" format="float" type="dimen">1.65</item>
+    <item name="card_weight" format="float" type="dimen">3.35</item>
+    <dimen name="card_negative_margin">-10dp</dimen>
+    <dimen name="pick_two_card_margin">10dp</dimen>
+    <dimen name="pick_two_card_negative_margin">-10dp</dimen>
+    <dimen name="pick_two_card_icon_negative_margin">-5dp</dimen>
+    <dimen name="submitted_by_margin">8dp</dimen>
+    <dimen name="image_submitted_by_margin">4dp</dimen>
+    <dimen name="small_button_size">46dp</dimen>
+    <dimen name="round_selector_width">50dp</dimen>
+    <dimen name="notification_padding">12dp</dimen>
+    <dimen name="control_panel_button_padding">12dp</dimen>
+    <dimen name="player_list_text_margin">4dp</dimen>
+    <dimen name="player_list_row_height">22dp</dimen>
+    <dimen name="player_indicator_height">26dp</dimen>
+    <dimen name="player_indicator_margin_right">2dp</dimen>
+    <dimen name="player_indicator_size">16dp</dimen>
+    <dimen name="score_change_margin">4dp</dimen>
+    <dimen name="progress_bar_height">2dp</dimen>
+    <dimen name="image_load_progress_bar_size">30dp</dimen>
+    <dimen name="image_reload_button_size">30dp</dimen>
+
+    <dimen name="control_panel_font_size">21sp</dimen>
+    <dimen name="card_font_size">14sp</dimen>
+    <dimen name="submitted_by_font_size">10sp</dimen>
+    <dimen name="player_list_font_size">14sp</dimen>
+    <dimen name="score_change_font_size">14sp</dimen>
+    <dimen name="player_indicator_font_size">18sp</dimen>
+    <dimen name="notification_font_size">14sp</dimen>
+    <dimen name="timer_font_size">12sp</dimen>
+    <dimen name="round_font_size">16sp</dimen>
+
+    <!-- Chat Screen -->
+    <dimen name="chat_padding">6dp</dimen>
+    <dimen name="chat_list_view_padding">4dp</dimen>
+    <dimen name="chat_message_padding">4dp</dimen>
+    <dimen name="chat_progress_bar_size">46dp</dimen>
+    <dimen name="message_box_height">46dp</dimen>
+    <dimen name="send_button_size">30dp</dimen>
+    <dimen name="send_button_padding">8dp</dimen>
+    <dimen name="send_progress_bar_size">30dp</dimen>
+    <dimen name="chat_font_size">14sp</dimen>
+    <dimen name="chat_hour_minute_size">8sp</dimen>
+    <dimen name="chat_divider_height">4dp</dimen>
+    <dimen name="chat_bubble_margin">12dp</dimen>
+
+    <!-- Image Search Screen -->
+    <dimen name="image_height">120dp</dimen>
+    <dimen name="image_spacing">2dp</dimen>
+    <dimen name="search_button_padding">10dp</dimen>
+
+    <!-- About Popup -->
+    <dimen name="about_padding">8dp</dimen>
+    <dimen name="about_text_margin">6dp</dimen>
+    <dimen name="about_button_height">42dp</dimen>
+    <dimen name="about_button_padding">28dp</dimen>
+    <dimen name="about_button_font_size">12sp</dimen>
+    <dimen name="about_header_font_size">12sp</dimen>
+    <dimen name="about_font_size">10sp</dimen>
+
+    <!-- Rate Popup -->
+    <dimen name="rate_button_padding">22dp</dimen>
+
+    <!-- Bet Popup -->
+    <dimen name="bet_popup_width">150dp</dimen>
+    <dimen name="bet_button_padding">10dp</dimen>
+    <dimen name="bet_popup_font_size">36sp</dimen>
+
+    <!-- Misc -->
+    <dimen name="header_font_size">16sp</dimen>
+    <dimen name="header_padding">6dp</dimen>
+    <dimen name="description_font_size">10sp</dimen>
+    <dimen name="list_item_image_size">56dp</dimen>
+    <dimen name="list_item_image_margin">2dp</dimen>
+    <dimen name="list_item_text_margin">10dp</dimen>
+    <dimen name="list_item_font_size">14sp</dimen>
+
+</resources>

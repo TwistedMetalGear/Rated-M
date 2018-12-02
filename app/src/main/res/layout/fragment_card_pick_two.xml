@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/root"
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout android:id="@+id/card_left"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_marginLeft="@dimen/pick_two_card_negative_margin"
+                  android:layout_marginRight="@dimen/pick_two_card_margin"
+                  android:rotation="-10">
+
+        <FrameLayout android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="@dimen/card_weight">
+
+            <!-- Original padding: 14dp top, 24dp sides -->
+            <LinearLayout android:id="@+id/card_left_touch_area"
+                          android:orientation="vertical"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:background="@drawable/white_card_img"
+                          android:layout_marginLeft="@dimen/card_margin_left"
+                          android:layout_marginRight="@dimen/card_margin_right"
+                          android:layout_marginTop="@dimen/card_margin_top"
+                          android:paddingTop="@dimen/card_padding_top"
+                          android:paddingLeft="@dimen/card_padding_left"
+                          android:paddingRight="@dimen/card_padding_right">
+
+                <TextView android:id="@+id/card_text_left"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:gravity="top"
+                          android:textSize="@dimen/card_font_size"
+                          android:textColor="@color/white_card_text"
+                          android:background="@android:color/transparent"/>
+
+                <FrameLayout android:id="@+id/image_panel_left"
+                             android:orientation="vertical"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:visibility="gone">
+                    <LinearLayout android:id="@+id/progress_bar_left"
+                                  android:orientation="vertical"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:visibility="gone">
+                        <LinearLayout android:orientation="vertical"
+                                      android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:layout_weight=".78"
+                                      android:gravity="center">
+                            <ProgressBar android:layout_width="@dimen/image_load_progress_bar_size"
+                                         android:layout_height="@dimen/image_load_progress_bar_size"
+                                         android:indeterminateTint="@color/blue"
+                                         android:indeterminateTintMode="src_in"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:layout_weight=".22"/>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/image_container_left"
+                                  android:orientation="vertical"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="match_parent">
+                        <ImageView android:id="@+id/image_left"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="0dp"
+                                   android:layout_weight=".78"/>
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:layout_weight=".22">
+                            <TextView android:id="@+id/image_submitted_by_left"
+                                      android:textSize="@dimen/submitted_by_font_size"
+                                      android:textColor="@color/white_card_text"
+                                      android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:gravity="right"
+                                      android:visibility="gone"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/error_left"
+                                  android:orientation="vertical"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:visibility="gone">
+                        <LinearLayout android:orientation="vertical"
+                                      android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:layout_weight=".78"
+                                      android:gravity="center">
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:textSize="@dimen/card_font_size"
+                                      android:text="@string/reload_image"/>
+                            <ImageView android:layout_width="@dimen/image_reload_button_size"
+                                       android:layout_height="@dimen/image_reload_button_size"
+                                       android:src="@drawable/refresh"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:layout_weight=".22"/>
+                    </LinearLayout>
+                </FrameLayout>
+
+                <TextView android:id="@+id/submitted_by_left"
+                          android:textSize="@dimen/submitted_by_font_size"
+                          android:textColor="@color/white_card_text"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="@dimen/submitted_by_margin"
+                          android:gravity="right"
+                          android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <ImageView android:id="@+id/card_icon_left"
+                       android:layout_width="@dimen/card_icon_size"
+                       android:layout_height="@dimen/card_icon_size"
+                       android:layout_marginTop="@dimen/pick_two_card_icon_negative_margin"
+                       android:layout_gravity="top|center"
+                       android:visibility="gone"/>
+
+            <ImageView android:id="@+id/reaction_left"
+                       android:layout_width="@dimen/reaction_size"
+                       android:layout_height="@dimen/reaction_size"
+                       android:layout_marginRight="@dimen/reaction_margin"
+                       android:layout_gravity="top|right"
+                       android:visibility="gone"/>
+        </FrameLayout>
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight="2"/>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/card_right"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_marginLeft="@dimen/pick_two_card_margin"
+                  android:layout_marginRight="@dimen/pick_two_card_negative_margin"
+                  android:rotation="10">
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight="2"/>
+
+        <FrameLayout android:layout_width="0dp"
+                     android:layout_height="match_parent"
+                     android:layout_weight="@dimen/card_weight">
+
+            <!-- Original padding: 14dp top, 24dp sides -->
+            <LinearLayout android:id="@+id/card_right_touch_area"
+                          android:orientation="vertical"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:background="@drawable/white_card_img"
+                          android:layout_marginLeft="@dimen/card_margin_left"
+                          android:layout_marginRight="@dimen/card_margin_right"
+                          android:layout_marginTop="@dimen/card_margin_top"
+                          android:paddingTop="@dimen/card_padding_top"
+                          android:paddingLeft="@dimen/card_padding_left"
+                          android:paddingRight="@dimen/card_padding_right">
+
+                <TextView android:id="@+id/card_text_right"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:gravity="top"
+                          android:textSize="@dimen/card_font_size"
+                          android:textColor="@color/white_card_text"
+                          android:background="@android:color/transparent"/>
+
+                <FrameLayout android:id="@+id/image_panel_right"
+                             android:orientation="vertical"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:visibility="gone">
+                    <LinearLayout android:id="@+id/progress_bar_right"
+                                  android:orientation="vertical"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:visibility="gone">
+                        <LinearLayout android:orientation="vertical"
+                                      android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:layout_weight=".78"
+                                      android:gravity="center">
+                            <ProgressBar android:layout_width="@dimen/image_load_progress_bar_size"
+                                         android:layout_height="@dimen/image_load_progress_bar_size"
+                                         android:indeterminateTint="@color/blue"
+                                         android:indeterminateTintMode="src_in"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:layout_weight=".22"/>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/image_container_right"
+                                  android:orientation="vertical"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="match_parent">
+                        <ImageView android:id="@+id/image_right"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="0dp"
+                                   android:layout_weight=".78"/>
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:layout_weight=".22">
+                            <TextView android:id="@+id/image_submitted_by_right"
+                                      android:textSize="@dimen/submitted_by_font_size"
+                                      android:textColor="@color/white_card_text"
+                                      android:layout_width="match_parent"
+                                      android:layout_height="wrap_content"
+                                      android:gravity="left"
+                                      android:visibility="gone"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/error_right"
+                                  android:orientation="vertical"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:visibility="gone">
+                        <LinearLayout android:orientation="vertical"
+                                      android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:layout_weight=".78"
+                                      android:gravity="center">
+                            <TextView android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:textSize="@dimen/card_font_size"
+                                      android:text="@string/reload_image"/>
+                            <ImageView android:layout_width="@dimen/image_reload_button_size"
+                                       android:layout_height="@dimen/image_reload_button_size"
+                                       android:src="@drawable/refresh"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:layout_weight=".22"/>
+                    </LinearLayout>
+                </FrameLayout>
+
+                <TextView android:id="@+id/submitted_by_right"
+                          android:textSize="@dimen/submitted_by_font_size"
+                          android:textColor="@color/white_card_text"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="@dimen/submitted_by_margin"
+                          android:gravity="right"
+                          android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <ImageView android:id="@+id/card_icon_right"
+                       android:layout_width="@dimen/card_icon_size"
+                       android:layout_height="@dimen/card_icon_size"
+                       android:layout_marginTop="@dimen/pick_two_card_icon_negative_margin"
+                       android:layout_gravity="top|center"
+                       android:visibility="gone"/>
+
+            <ImageView android:id="@+id/reaction_right"
+                       android:layout_width="@dimen/reaction_size"
+                       android:layout_height="@dimen/reaction_size"
+                       android:layout_marginRight="@dimen/reaction_margin"
+                       android:layout_gravity="top|right"
+                       android:visibility="gone"/>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\John\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="C:\Users\John\RatedM_VPS\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.1.1_c9c4b766ae7371df2b801255d2acb3e605f0f6b9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\John\RatedM_VPS\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9919563cffd8e3732e944d3c437d4b9575a08448">
+        <dex dex="C:\Users\John\RatedM_VPS\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-9.0.2_bf43aa7e310602ceaeea8c708d165586bb30b96f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\John\RatedM_VPS\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="94d9cedd04b124aed044ac71c451a292856d854c">
+        <dex dex="C:\Users\John\RatedM_VPS\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.0.2_741ac03d999511692592fabc0554ac55df1c2ead\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\John\RatedM_VPS\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a511c684ea4c2cf31a3377d51e7677cb76696e07">
+        <dex dex="C:\Users\John\RatedM_VPS\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-9.0.2_f22a9de4b34278d8396b8fc58cd85697047088a1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\John\RatedM_VPS\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="C:\Users\John\RatedM_VPS\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.1.1_d816a8463544c7cf219a392c119e1c3d4681779d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\John\RatedM_VPS\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b3d0809a742c5f768c6aa9efc6decd5c1d6cd227">
+        <dex dex="C:\Users\John\RatedM_VPS\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-9.0.2_ba5df25d0601915e98ac6da25879138483cad46a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\John\RatedM_VPS\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="C:\Users\John\RatedM_VPS\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.1.1_3b73f858af470c445fed084f041a88f2e79c6875\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\John\RatedM_VPS\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4022261eeea0d92eb2997a68d2c1f084a16abad9">
+        <dex dex="C:\Users\John\RatedM_VPS\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.0.2_d3bb3dd446fd5dd57ccb0bc5b6abcab134493780\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\John\RatedM_VPS\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="C:\Users\John\RatedM_VPS\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.1.1_b6b284275734516b3cc3a38a2e350db2425dae9f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\John\RatedM_VPS\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="857c83782c948e0362885667103f5321c1e40fd0">
+        <dex dex="C:\Users\John\RatedM_VPS\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_5d9b0757ef0b77b76123a2e1f487d0501b52198b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\John\RatedM_VPS\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="aec1bc54964a85d851c2c1b1cb7f90f7dbd755ab">
+        <dex dex="C:\Users\John\RatedM_VPS\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.0.2_6d7329e051f21c977f5aff3b9d448862327154cf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\John\RatedM_VPS\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.7.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5bdb38b7e4b6094891648c1dc4dc08589b460f97">
+        <dex dex="C:\Users\John\RatedM_VPS\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.facebook.android-facebook-android-sdk-4.7.0_85c5f063b7df2000124779151153edd317dc710b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\John\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.2.0\6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd\bolts-android-1.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
+        <dex dex="C:\Users\John\RatedM_VPS\app\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-android-1.2.0_47be103f869cb3b992ee58e6bca6973abb90ee7a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\John\RatedM_VPS\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2774b1e02e5fbc524590311a744263c3b152d63">
+        <dex dex="C:\Users\John\RatedM_VPS\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-messaging-9.0.2_a3524e65c5b3a7b9614a9d7d77fec4a8568bbb07\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\John\RatedM_VPS\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="11fafaf0f646ad1f5db516cc44700ae69f2c044d">
+        <dex dex="C:\Users\John\RatedM_VPS\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_5b5fb4ded4f9996a604f1ac11f11aa0e22a3dab2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\John\RatedM_VPS\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="51a11c41a08f099a204e1b8dcc04f27217de50ec">
+        <dex dex="C:\Users\John\RatedM_VPS\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-9.0.2_7939ce57f618db7abd92214fa6d7918a37bffb53\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\John\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="C:\Users\John\RatedM_VPS\app\build\intermediates\transforms\dex\debug\folders\1000\10\glide-3.7.0_4c9574103c8fbcdc7b75a967324fe703a78362b1\classes.dex" />
+    </item>
+
+</items>

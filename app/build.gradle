@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        applicationId "net.silentbyte.ratedm"
+        minSdkVersion 14
+        targetSdkVersion 23
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'aapt_rules.txt'
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile fileTree(include: '*.jar', dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.facebook.android:facebook-android-sdk:4.7.0'
+    compile 'com.google.firebase:firebase-messaging:9.0.2'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+}
+
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,348 @@
+<!-- #4e84ce -->
+<!-- gray background: 262626 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:butterbar="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:fitsSystemWindows="true"
+              android:background="@color/table_row_dark"
+              tools:context=".GameActivity">
+
+    <!-- Hard coded height here. Is there a better way? Will this cause issues on different DPI phones? -->
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                 android:layout_weight="1"
+                 android:layout_gravity="center_horizontal"
+                 android:background="@color/background">
+        <!-- Original card size (without shadow) 182x252 dp -->
+        <!-- Original padding: 14dp -->
+        <!--
+        <LinearLayout android:layout_width="182dp"
+                      android:layout_height="252dp"
+                      android:layout_marginTop="8dp"
+                      android:layout_gravity="center_horizontal"
+                      android:background="@drawable/black_card"
+                      android:orientation="vertical"
+                      android:paddingTop="12dp"
+                      android:paddingLeft="14dp"
+                      android:paddingRight="14dp">
+        -->
+
+        <LinearLayout android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent">
+            <!-- Empty -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <LinearLayout android:orientation="vertical"
+                          android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:layout_weight="3.14">
+                <!-- Black card -->
+                <LinearLayout android:id="@+id/black_card"
+                              android:layout_width="match_parent"
+                              android:layout_height="0dp"
+                              android:layout_weight="1"
+                              android:layout_marginLeft="12dp"
+                              android:layout_marginRight="12dp"
+                              android:layout_marginTop="8dp"
+                              android:background="@drawable/black_card_img"
+                              android:orientation="vertical"
+                              android:paddingTop="14dp"
+                              android:paddingLeft="26dp"
+                              android:paddingRight="26dp">
+
+                    <net.silentbyte.ratedm.AutoResizeTextView android:id="@+id/black_card_text"
+                                                              android:text=""
+                                                              android:textSize="18sp"
+                                                              android:textColor="@color/black_card_text"
+                                                              android:layout_width="match_parent"
+                                                              android:layout_height="0dp"
+                                                              android:layout_weight=".92"
+                                                              android:linksClickable="true"/>
+
+                    <net.silentbyte.ratedm.CardEditText android:id="@+id/black_card_text_input"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:gravity="top|left"
+                                                        android:textSize="18sp"
+                                                        android:textColor="@color/black_card_text"
+                                                        android:textColorHint="@color/black_card_text_hint"
+                                                        android:background="@android:color/transparent"
+                                                        android:maxLength="255"
+                                                        android:hint="@string/black_card_hint"
+                                                        android:inputType="textAutoCorrect|textCapSentences|textMultiLine"
+                                                        android:imeOptions="actionDone"
+                                                        android:visibility="gone"/>
+
+                    <!-- Empty -->
+                    <LinearLayout android:id="@+id/black_card_bottom"
+                                  android:orientation="vertical"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="0dp"
+                                  android:layout_weight="0"/>
+                </LinearLayout>
+
+                <!-- Empty -->
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="0dp"
+                              android:layout_weight=".3"/>
+            </LinearLayout>
+
+            <!-- Empty -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <!--  34 dp -->
+        <Spinner android:id="@+id/round_selector"
+                 android:layout_width="52dp"
+                 android:layout_height="48dp"
+                 android:layout_gravity="left"
+                 android:background="@color/background"
+                 android:theme="@style/roundSelectorTheme_3_5"/>
+
+        <ImageView android:id="@+id/menu_button"
+                   android:layout_width="48dp"
+                   android:layout_height="48dp"
+                   android:layout_gravity="right"
+                   android:scaleType="center"
+                   android:src="@drawable/menu"/>
+
+        <!--
+        <LinearLayout android:id="@+id/menu_button"
+                      android:layout_width="23dp"
+                      android:layout_height="23dp"
+                      android:layout_gravity="right"
+                      android:layout_marginTop="8dp"
+                      android:layout_marginRight="8dp"
+                      android:orientation="vertical"
+                     >
+            <FrameLayout android:layout_width="5dp"
+                         android:layout_height="5dp"
+                         android:layout_gravity="center_horizontal"
+                         android:background="@android:color/black"/>
+            <FrameLayout android:layout_width="5dp"
+                         android:layout_height="5dp"
+                         android:layout_gravity="center_horizontal"
+                         android:layout_marginTop="4dp"
+                         android:background="@android:color/black"/>
+            <FrameLayout android:layout_width="5dp"
+                         android:layout_height="5dp"
+                         android:layout_gravity="center_horizontal"
+                         android:layout_marginTop="4dp"
+                         android:background="@android:color/black"/>
+        </LinearLayout>
+        -->
+
+        <LinearLayout android:orientation="vertical"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_marginBottom="-22dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <net.silentbyte.ratedm.CardViewPager
+                android:id="@+id/card_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.65"
+                android:overScrollMode="never"/>
+        </LinearLayout>
+
+        <!-- Fragment container for chat screen. -->
+        <FrameLayout android:id="@+id/fragment_chat_container"
+                     android:visibility="gone"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"/>
+
+        <net.silentbyte.ratedm.ButteryProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="2.5dp"
+            android:layout_gravity="bottom"
+            butterbar:barColor="@color/blue"
+            butterbar:barHeight="2.5dp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <!-- Might want to add a background here (should match main background color) -->
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_gravity="bottom"
+                  android:layout_weight=".8"
+                  android:orientation="vertical">
+
+        <!-- Control Panel -->
+        <!-- TODO: Should this be a fragment? If so, make sure not to mix XML fragments with dynamically generated fragments. Doing so can cause a crash. -->
+        <FrameLayout android:layout_width="match_parent"
+                     android:layout_height="0dp"
+                     android:layout_weight=".16"
+                     android:background="@color/control_panel_background">
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:gravity="center"
+                          android:orientation="horizontal">
+
+                <TextView android:id="@+id/notification"
+                          android:visibility="gone"
+                          android:textSize="18sp"
+                          android:textStyle="bold"
+                          android:textColor="@color/control_panel_text"
+                          android:gravity="center_vertical"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:paddingLeft="14dp"
+                          android:paddingRight="14dp"/>
+
+                <TextView android:id="@+id/submit_button"
+                          android:text="@string/submit"
+                          android:textSize="27sp"
+                          android:textStyle="bold"
+                          android:textColor="@color/disabled_text"
+                          android:gravity="center_vertical"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:paddingLeft="16dp"
+                          android:paddingRight="16dp"/>
+
+                <TextView android:id="@+id/bet_button"
+                          android:text="@string/bet"
+                          android:textSize="27sp"
+                          android:textStyle="bold"
+                          android:textColor="@color/disabled_text"
+                          android:gravity="center_vertical"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:paddingLeft="16dp"
+                          android:paddingRight="16dp"/>
+
+                <TextView android:id="@+id/toss_button"
+                          android:text="@string/toss"
+                          android:textSize="27sp"
+                          android:textStyle="bold"
+                          android:textColor="@color/disabled_text"
+                          android:gravity="center_vertical"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:paddingLeft="16dp"
+                          android:paddingRight="16dp"/>
+
+                <TextView android:id="@+id/chat_button"
+                          android:text="@string/chat"
+                          android:textSize="27sp"
+                          android:textStyle="bold"
+                          android:textColor="@color/control_panel_text"
+                          android:gravity="center_vertical"
+                          android:layout_width="wrap_content"
+                          android:layout_height="match_parent"
+                          android:paddingLeft="16dp"
+                          android:paddingRight="16dp"/>
+
+            </LinearLayout>
+            <LinearLayout android:id="@+id/control_panel_overlay"
+                          android:visibility="gone"
+                          android:orientation="horizontal"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:background="@android:color/transparent"/>
+        </FrameLayout>
+
+        <!-- Table header -->
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight=".08"
+                      android:orientation="horizontal">
+
+            <!-- Player -->
+            <FrameLayout android:layout_height="match_parent"
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:background="@drawable/table_header_border_right"
+                         android:orientation="horizontal">
+                <TextView android:text="Player"
+                          android:textSize="18sp"
+                          android:textStyle="bold"
+                          android:textColor="@color/table_header_text"
+                          android:layout_gravity="left|center_vertical"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="6dp"/>
+                <TextView android:id="@+id/timer"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="right|center_vertical"
+                          android:layout_marginRight="@dimen/player_list_text_margin"
+                          android:textColor="@color/table_header_text"
+                          android:textSize="16sp"/>
+            </FrameLayout>
+
+            <!-- Score -->
+            <FrameLayout android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight=".4"
+                         android:background="@drawable/table_header_border_right"
+                         android:orientation="horizontal">
+                <TextView android:text="Score"
+                          android:textSize="18sp"
+                          android:textStyle="bold"
+                          android:textColor="@color/table_header_text"
+                          android:layout_gravity="left|center_vertical"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="6dp"/>
+            </FrameLayout>
+
+            <!-- Win % -->
+            <FrameLayout android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight=".28"
+                         android:background="@drawable/table_header_border_right"
+                         android:orientation="horizontal">
+                <TextView android:text="Win %"
+                          android:textSize="18sp"
+                          android:textStyle="bold"
+                          android:textColor="@color/table_header_text"
+                          android:layout_gravity="left|center_vertical"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="6dp"/>
+            </FrameLayout>
+
+            <!-- Bet -->
+            <FrameLayout android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight=".22"
+                         android:background="@drawable/table_header"
+                         android:orientation="horizontal">
+                <TextView android:text="Bet"
+                          android:textSize="18sp"
+                          android:textStyle="bold"
+                          android:textColor="@color/table_header_text"
+                          android:layout_gravity="left|center_vertical"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="6dp"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <!-- Player list -->
+        <ListView android:id="@+id/players"
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight=".76"
+                  android:scrollbars="none"
+                  android:overScrollMode="never"
+                  android:listSelector="@android:color/transparent"/>
+    </LinearLayout>
+</LinearLayout>

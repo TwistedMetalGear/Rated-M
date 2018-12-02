@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:background="@color/light_gray"
+              tools:context=".MatchesActivity">
+
+    <ProgressBar android:id="@+id/progress_bar"
+                 android:layout_width="48dp"
+                 android:layout_height="48dp"
+                 android:indeterminateTint="@color/blue"
+                 android:indeterminateTintMode="src_in"/>
+
+    <LinearLayout android:id="@+id/content"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:visibility="gone">
+        <!-- Matches list -->
+        <ListView android:id="@+id/matches"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/empty"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:visibility="gone">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="16sp"
+                  android:text="@string/no_matches"/>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/error"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:visibility="gone">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="16sp"
+                  android:text="@string/match_retrieval_failure"/>
+        <Button android:id="@+id/retry_button"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/retry"/>
+    </LinearLayout>
+</LinearLayout>

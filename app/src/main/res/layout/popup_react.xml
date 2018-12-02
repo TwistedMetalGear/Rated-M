@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:padding="@dimen/reaction_padding"
+              android:background="@color/white">
+
+    <GridView android:id="@+id/reactions"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:horizontalSpacing="@dimen/image_spacing"
+              android:verticalSpacing="@dimen/image_spacing"
+              android:numColumns="6"/>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/invite"
+          android:title="@string/menu_item_invite"/>
+    <item android:id="@+id/kick"
+          android:title="@string/menu_item_kick"/>
+    <item android:id="@+id/auto_pick_skip"
+          android:title="@string/menu_item_auto_pick_skip"/>
+    <item android:id="@+id/match_settings"
+          android:title="@string/menu_item_match_settings"/>
+    <item android:id="@+id/general_settings"
+          android:title="@string/menu_item_general_settings"/>
+    <item android:id="@+id/leave_match"
+          android:title="@string/menu_item_leave_match"/>
+    <!--
+    <item android:id="@+id/about"
+          android:title="@string/menu_item_about"/>
+    <item android:id="@+id/previous_results"
+          android:title="Previous Results"/>
+    <item android:id="@+id/turn_status"
+          android:title="@string/turn_status"/>
+    <item android:id="@+id/leave_match"
+          android:title="Leave Match"/>
+    <item android:id="@+id/test"
+          android:title="@string/test"/>
+    -->
+</menu>
