@@ -12,7 +12,7 @@ There's also no real packaging structure here. Ideally, things would be packaged
 
 The use of 3rd party libraries was kept to a minimum. For example, instead of using something like Retrofit to handle HTTP requests, I used the much lower level HttpURLConnection and manually parsed the response JSON. Part of this is because I wanted to get a good understanding of how things work at a lower level.
 
-So, this codebase is definitely not winning any awards. However, I am damn proud of what I was able to accomplish. The app is very stable and supports devices all the way back to API 14. Despite being locked to portrait mode, I made it a priority to support config changes and gracefully resume upon the process being destroyed in a low memory situation.
+So, this codebase is definitely not winning any awards. However, I am very proud of what I was able to accomplish with my first foray into Android. The app is very stable and supports devices all the way back to API 14. Despite being locked to portrait mode, I made it a priority to support config changes and gracefully resume upon the process being destroyed in a low memory situation.
 
 Note that I removed some private ids and URLs from this codebase. So it won't run, or at least it won't connect to the server in this state. My intent is not to provide everything you need to get connected and running, but rather just to share the code of my first app and hopefully motivate other developers with similar ideas.
 
